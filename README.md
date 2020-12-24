@@ -3,4 +3,4 @@
  
 
  Buradan youtube videomu izleyebilirsiniz
- [C# Generic Sınıflara Giriş](https://youtu.be/QVZbGdQbFAw)
+ [C# Generic Sınıflara Giriş]https://www.youtube.com/watch?v=23jDOOE9ssg
