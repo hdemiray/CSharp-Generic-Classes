@@ -11,20 +11,21 @@ namespace ConsoleCoreApp1
             productDal.ProductOfYear();
         }
     }
-
-
-    class Customer
+    class Product:IEntity
     {
 
     }
-    class Product
+    class Customer:IEntity
     {
 
     }
+    interface IEntity
+    {
 
+    }
     class ProductDal : IProductDal
     {
-        public void Add(Product product)
+        public void Add(Product customer)
         {
             throw new NotImplementedException();
         }
@@ -41,13 +42,11 @@ namespace ConsoleCoreApp1
 
         public void ProductOfYear()
         {
-            Console.Write("Product running");
+            Console.Write("calisti");
         }
     }
 
-
-
-    class CustomerDal : ICustomerDal //CRUD
+    class CustmerDal : ICustomerDal
     {
         public void Add(Customer customer)
         {
@@ -64,23 +63,20 @@ namespace ConsoleCoreApp1
             throw new NotImplementedException();
         }
     }
-
-
-    interface ICustomerDal:IRepository<Customer>
+    interface ICustomerDal:IRepository<Customer> //CRUD
     {
-
     }
-
-    interface IProductDal:IRepository<Product>
+    interface IProductDal:IRepository<Product> //CRUD
     {
         void ProductOfYear();
     }
 
-    //We have actually same code on crud. It's just difference Types.
-    interface IRepository<T>
+    interface IRepository<T> where T:class,IEntity
     {
         List<T> GetAll();
         T Get(int id);
         void Add(T entity);
+        void Delete(T entity);
+        void Update(T entity);
     }
 }
