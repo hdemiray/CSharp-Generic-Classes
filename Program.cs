@@ -71,7 +71,15 @@ namespace ConsoleCoreApp1
         void ProductOfYear();
     }
 
-    interface IRepository<T> where T:class,IEntity
+    /*
+       This is how we could constrains to generic interface.
+
+       The class keyword tells the interface that it will only accept a reference type.
+       IEntity keyword tells it to accept only classes with IEntity implemented.
+       These constrains are intended to protect the developer.
+    */
+
+    interface IRepository<T> where T:class,IEntity 
     {
         List<T> GetAll();
         T Get(int id);
