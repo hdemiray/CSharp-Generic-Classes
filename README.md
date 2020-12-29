@@ -1,9 +1,7 @@
-# CSharp-Generic-Classes
- Introduction to Generic Classes in C#
- 
- Generic Constrains
+## CSharp-Generic-Classes
 
- Buradan youtube videosunu izleyebilirsiniz
- 
+ # Introduction to Generic Classes in C#
+ <br />
+ # Generic Constrains
  
  [C# Generic Sınıflara Giriş] (https://www.youtube.com/watch?v=23jDOOE9ssg)
