@@ -6,5 +6,3 @@
  
  # Generic Constrains
  
- 
- [Video for Turkish Language](https://www.youtube.com/watch?v=23jDOOE9ssg)
